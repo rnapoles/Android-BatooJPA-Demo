@@ -1,0 +1,130 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "org.batoo.jpa.android"
+        minSdkVersion 16
+        targetSdkVersion 16
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    dependencies {
+        compile 'com.android.support:support-v4:18.0.0'
+        //compile 'com.google.guava:guava:18.0'
+        //compile files('libs/batoo-jpa-2.0.1.3-SNAPSHOT.jar')
+        compile project(':androidbatoojpa')
+        compile fileTree(dir: '../androidbatoojpa/libs', include: ['*.jar'])
+
+    }
+
+    dexOptions {
+        preDexLibraries = false
+    }
+
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        dx.additionalParameters += '--core-library'
+        //println "Info:" + dx.name
+
+        // this is optional
+        // dx.additionalParameters += "--main-dex-list=$projectDir/multidex.keep".toString()
+    }
+
+}
+
+dependencies {
+    compile project(':androidbatoojpa')
+}
+
+//Enhancer
+String resourcesDir = 'app/src/main/resources/'
+String outDir = resourcesDir + 'org/batoo/jpa/android/model/'
+String cp = 'app/build/intermediates/classes/debug/'
+String inDir = cp + 'org/batoo/jpa/android/model/'
+
+
+mkdir(resourcesDir)
+mkdir(outDir)
+
+task runEnhancer {
+    doLast {
+
+        println System.getProperty("user.dir")
+        System.out.println("java" + " -jar" + " app/bin/BatooEnhancer.jar" + " -c " + cp +" -i "+inDir+" -o " + outDir)
+        //,"-o",outDir
+        Process p = ["java", "-jar", "app/bin/BatooEnhancer.jar", "-c",cp,"-i",inDir].execute()
+        p.errorStream.eachLine { println it}
+        p.inputStream.eachLine { println it}
+        if (p.exitValue() == 1) throw new Exception("Error running BatooEnhancer")
+
+    }
+}
+
+/*
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn runEnhancer
+}
+*/
+
+
+/*
+tasks.whenTaskAdded {
+    task ->  println "The task:"+ task.name
+}
+*/
+
+tasks.whenTaskAdded { task ->
+    //println task.name
+    if (task.name == 'dexDebug') {
+        task.dependsOn runEnhancer
+        println task.name
+    }
+}
+
+
+
+sourceSets {
+    main.resources.srcDirs = [resourcesDir]
+}
+
+
+
+
+
+
+

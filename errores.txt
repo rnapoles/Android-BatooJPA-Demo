@@ -1,0 +1,145 @@
+dalvikvm? Zygote::ForkAndSpecialize : 0
+dalvikvm? zygote get new systemTid : 9489
+dalvikvm? Late-enabling CheckJNI
+dalvikvm? threadid=2: interp stack at 0x5baae000
+dalvikvm? threadid=3: interp stack at 0x5bbce000
+dalvikvm? Elevating priority from 0 to -8
+jdwp? prepping for JDWP over ADB
+dalvikvm? threadid=4: interp stack at 0x5bcef000
+jdwp? JDWP: thread running
+dalvikvm? threadid=5: interp stack at 0x5f120000
+dalvikvm? zygote get thread init done
+jdwp? trying to receive file descriptor from ADB
+dalvikvm? create interp thread : stack size=128KB
+dalvikvm? create new thread
+dalvikvm? new thread created
+dalvikvm? update thread list
+dalvikvm? threadid=6: interp stack at 0x5f140000
+dalvikvm? threadid=6: created from interp
+dalvikvm? start new thread
+dalvikvm? create interp thread : stack size=128KB
+dalvikvm? create new thread
+dalvikvm? new thread created
+dalvikvm? update thread list
+dalvikvm? threadid=6: notify debugger
+dalvikvm? threadid=6 (ReferenceQueueDaemon): calling run()
+dalvikvm? threadid=7: interp stack at 0x5f260000
+dalvikvm? threadid=7: created from interp
+dalvikvm? start new thread
+dalvikvm? threadid=7: notify debugger
+dalvikvm? threadid=7 (FinalizerDaemon): calling run()
+dalvikvm? create interp thread : stack size=128KB
+dalvikvm? create new thread
+dalvikvm? new thread created
+dalvikvm? update thread list
+dalvikvm? threadid=8: interp stack at 0x5f380000
+dalvikvm? threadid=8: created from interp
+dalvikvm? start new thread
+dalvikvm? threadid=8: notify debugger
+dalvikvm? threadid=8 (FinalizerWatchdogDaemon): calling run()
+jdwp? received file descriptor 38 from ADB
+dalvikvm? threadid=9: interp stack at 0x5f79e000
+dalvikvm? threadid=10: interp stack at 0x5f8be000
+06-14 22:03:39.681    9489-9489/org.batoo.jpa.android V/Provider/Settings? invalidate [system]: current 42 != cached 0
+ActivityThread? hoder:android.app.IActivityManager$ContentProviderHolder@41ca10c0,provider,holder.Provider:android.content.ContentProviderProxy@41ca1838
+06-14 22:03:39.685    9489-9489/org.batoo.jpa.android V/Provider/Settings? from db cache, name = anr_debugging_mechanism , value = 1
+asset? AssetManager-->addDefaultAssets CIP path not exsit!
+Proxy? setHttpRequestCheckHandler
+dalvikvm? Debugger has detached; object registry had 1 entries
+jdwp? trying to receive file descriptor from ADB
+dalvikvm? open_cached_dex_file : /data/app/org.batoo.jpa.android-2.apk /data/dalvik-cache/data@app@org.batoo.jpa.android-2.apk@classes.dex
+ActivityThread? BIND_APPLICATION handled : 0 / AppBindData{appInfo=ApplicationInfo{41c9e9d8 org.batoo.jpa.android}}
+06-14 22:03:39.735    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.android.BasicDataSource' exceeds maximum length of 23 characters, using 'o*.b*.j*.a*.BasicDataS*' instead.
+06-14 22:03:39.769    9489-9489/org.batoo.jpa.android E/o*.b*.j*.a*.BasicDataS*? Init HelloAndroid
+06-14 22:03:39.789    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.core.BatooPersistenceProvider' exceeds maximum length of 23 characters, using 'o*.b*.j*.c*.BatooPersi*' instead.
+06-14 22:03:39.809    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.parser.impl.metadata.attribute.AttributesMetadataImpl' exceeds maximum length of 23 characters, using 'o*.b*.j*.p*.i*.m*.a*.A*' instead.
+06-14 22:03:39.810    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.common.reflect.ReflectHelper' exceeds maximum length of 23 characters, using 'o*.b*.c*.r*.ReflectHel*' instead.
+06-14 22:03:39.857    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.core.impl.manager.EntityManagerFactoryImpl' exceeds maximum length of 23 characters, using 'o*.b*.j*.c*.i*.m*.Enti*' instead.
+NativeCrypto? NativeCrypto_EVP_VerifyInit ctx=0x5bd3aa88
+NativeCrypto? NativeCrypto_EVP_VerifyInit algorithmChars=RSA-SHA1
+06-14 22:03:39.945    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method javax.sql.DataSource.getParentLogger, referenced from method org.batoo.jpa.jdbc.datasource.AbstractInternalDataSource.getParentLogger
+06-14 22:03:39.945    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve interface method 21599: Ljavax/sql/DataSource;.getParentLogger ()Ljava/util/logging/Logger;
+dalvikvm? VFY: replacing opcode 0x72 at 0x0002
+06-14 22:03:39.946    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.jdbc.datasource.HikariCPDataSource' exceeds maximum length of 23 characters, using 'o*.b*.j*.j*.d*.HikariC*' instead.
+06-14 22:03:39.947    9489-9489/org.batoo.jpa.android W/System.err? init BasicDataSource
+06-14 22:03:39.948    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.android.DriverDataSource' exceeds maximum length of 23 characters, using 'o*.b*.j*.a*.DriverData*' instead.
+06-14 22:03:39.948    9489-9489/org.batoo.jpa.android W/System.err? username:sa
+06-14 22:03:39.948    9489-9489/org.batoo.jpa.android W/System.err? jdbcUrl:jdbc:h2:/data/data/org.batoo.jpa.android/data/hello;FILE_LOCK=FS
+06-14 22:03:39.948    9489-9489/org.batoo.jpa.android W/System.err? password:
+06-14 22:03:39.948    9489-9489/org.batoo.jpa.android W/System.err? driverClassName:org.h2.Driver
+06-14 22:03:39.953    9489-9489/org.batoo.jpa.android W/o*.b*.j*.a*.DriverData*? Registered driver with driverClassName=org.h2.Driver was not found, trying direct instantiation.
+06-14 22:03:39.955    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method javax.sql.DataSource.getParentLogger, referenced from method org.batoo.jpa.jdbc.DataSourceProxy.getParentLogger
+06-14 22:03:39.955    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve interface method 21599: Ljavax/sql/DataSource;.getParentLogger ()Ljava/util/logging/Logger;
+dalvikvm? VFY: replacing opcode 0x72 at 0x0002
+06-14 22:03:39.955    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.jdbc.DataSourceProxy' exceeds maximum length of 23 characters, using 'o*.b*.j*.j*.DataSource*' instead.
+06-14 22:03:39.956    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method java.sql.Connection.abort, referenced from method org.batoo.jpa.jdbc.ConnectionProxy.abort
+06-14 22:03:39.956    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve interface method 19459: Ljava/sql/Connection;.abort (Ljava/util/concurrent/Executor;)V
+dalvikvm? VFY: replacing opcode 0x72 at 0x0002
+06-14 22:03:39.957    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method java.sql.Connection.getNetworkTimeout, referenced from method org.batoo.jpa.jdbc.ConnectionProxy.getNetworkTimeout
+06-14 22:03:39.957    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve interface method 19478: Ljava/sql/Connection;.getNetworkTimeout ()I
+dalvikvm? VFY: replacing opcode 0x72 at 0x0002
+06-14 22:03:39.957    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method java.sql.Connection.getSchema, referenced from method org.batoo.jpa.jdbc.ConnectionProxy.getSchema
+06-14 22:03:39.957    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve interface method 19479: Ljava/sql/Connection;.getSchema ()Ljava/lang/String;
+dalvikvm? VFY: replacing opcode 0x72 at 0x0002
+06-14 22:03:39.960    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method java.sql.Connection.setNetworkTimeout, referenced from method org.batoo.jpa.jdbc.ConnectionProxy.setNetworkTimeout
+06-14 22:03:39.960    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve interface method 19505: Ljava/sql/Connection;.setNetworkTimeout (Ljava/util/concurrent/Executor;I)V
+dalvikvm? VFY: replacing opcode 0x72 at 0x0002
+06-14 22:03:39.960    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method java.sql.Connection.setSchema, referenced from method org.batoo.jpa.jdbc.ConnectionProxy.setSchema
+06-14 22:03:39.960    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve interface method 19509: Ljava/sql/Connection;.setSchema (Ljava/lang/String;)V
+dalvikvm? VFY: replacing opcode 0x72 at 0x0002
+dalvikvm? create interp thread : stack size=128KB
+dalvikvm? create new thread
+dalvikvm? new thread created
+dalvikvm? update thread list
+dalvikvm? threadid=11: interp stack at 0x5ffe2000
+dalvikvm? threadid=11: created from interp
+dalvikvm? start new thread
+dalvikvm? threadid=11: notify debugger
+dalvikvm? threadid=11 (H2 Log Writer HELLO): calling run()
+06-14 22:03:40.078    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.jdbc.adapter.JdbcAdaptor' exceeds maximum length of 23 characters, using 'o*.b*.j*.j*.a*.JdbcAda*' instead.
+dalvikvm? threadid=11: exiting
+dalvikvm? threadid=11: bye!
+06-14 22:03:40.197    9489-9489/org.batoo.jpa.android I/AndroidLoggerFactory? Logger name 'org.batoo.jpa.core.impl.model.MetamodelImpl' exceeds maximum length of 23 characters, using 'o*.b*.j*.c*.i*.m*.Meta*' instead.
+06-14 22:03:40.201    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.getChar, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.get
+06-14 22:03:40.201    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47456: Lsun/misc/Unsafe;.getChar (Ljava/lang/Object;J)C
+dalvikvm? VFY: replacing opcode 0x6e at 0x001e
+06-14 22:03:40.201    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.getBoolean, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.get
+06-14 22:03:40.201    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47454: Lsun/misc/Unsafe;.getBoolean (Ljava/lang/Object;J)Z
+dalvikvm? VFY: replacing opcode 0x6e at 0x002b
+06-14 22:03:40.201    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.getFloat, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.get
+06-14 22:03:40.201    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47458: Lsun/misc/Unsafe;.getFloat (Ljava/lang/Object;J)F
+dalvikvm? VFY: replacing opcode 0x6e at 0x0045
+06-14 22:03:40.201    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.getDouble, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.get
+06-14 22:03:40.201    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47457: Lsun/misc/Unsafe;.getDouble (Ljava/lang/Object;J)D
+dalvikvm? VFY: replacing opcode 0x6e at 0x0052
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.getShort, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.get
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47462: Lsun/misc/Unsafe;.getShort (Ljava/lang/Object;J)S
+dalvikvm? VFY: replacing opcode 0x6e at 0x006c
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.getByte, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.get
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47455: Lsun/misc/Unsafe;.getByte (Ljava/lang/Object;J)B
+dalvikvm? VFY: replacing opcode 0x6e at 0x0079
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.putChar, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.set
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47467: Lsun/misc/Unsafe;.putChar (Ljava/lang/Object;JC)V
+dalvikvm? VFY: replacing opcode 0x6e at 0x0046
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.putBoolean, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.set
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47465: Lsun/misc/Unsafe;.putBoolean (Ljava/lang/Object;JZ)V
+dalvikvm? VFY: replacing opcode 0x6e at 0x005a
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.putBoolean, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.set
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47465: Lsun/misc/Unsafe;.putBoolean (Ljava/lang/Object;JZ)V
+dalvikvm? VFY: replacing opcode 0x6e at 0x006a
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.putFloat, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.set
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47469: Lsun/misc/Unsafe;.putFloat (Ljava/lang/Object;JF)V
+dalvikvm? VFY: replacing opcode 0x6e at 0x0086
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.putDouble, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.set
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47468: Lsun/misc/Unsafe;.putDouble (Ljava/lang/Object;JD)V
+dalvikvm? VFY: replacing opcode 0x74 at 0x0095
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.putShort, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.set
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47473: Lsun/misc/Unsafe;.putShort (Ljava/lang/Object;JS)V
+dalvikvm? VFY: replacing opcode 0x6e at 0x00b2
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.putByte, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.set
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47466: Lsun/misc/Unsafe;.putByte (Ljava/lang/Object;JB)V
+dalvikvm? VFY: replacing opcode 0x6e at 0x00c1
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android I/dalvikvm? Could not find method sun.misc.Unsafe.putChar, referenced from method org.batoo.common.reflect.UnsafeFieldAccessor.set
+06-14 22:03:40.202    9489-9489/org.batoo.jpa.android W/dalvikvm? VFY: unable to resolve virtual method 47467: Lsun/misc/Unsafe;.putChar (Ljava/lang/Object;JC)V
+dalvikvm? VFY: replacing opcode 0x6e at 0x00d0
+06-14 22:03:40.240    9489-9489/org.batoo.jpa.android I/o*.b*.j*.c*.BatooPersi*? Unable to build persistence unit: batoo
